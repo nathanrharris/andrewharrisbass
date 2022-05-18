@@ -1,0 +1,17 @@
+.biography {
+  .headshot {
+    border: 1px solid $white;
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: $small) {
+  .biography {
+    .headshot {
+      max-width: 40%;
+      float: left;
+      margin-right: 24px;
+    }
+  }
+}

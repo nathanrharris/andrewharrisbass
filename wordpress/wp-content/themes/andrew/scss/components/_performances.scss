@@ -1,0 +1,127 @@
+.performances {
+  text-align: center;
+
+  .grid__item {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid $grey-dark;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media screen and (min-width: $small) {
+    .grid__item {
+      width: 75%;
+    }
+  }
+
+  &__date {
+    color: $grey;
+    margin-bottom: 0;
+    font-family: verdana;
+  }
+
+  &__venue {
+    color: $white;
+    font-family: optimus;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+  }
+
+  &__opera {
+    color: $white;
+    font-style: italic;
+    font-size: 26px;
+    margin-bottom: 6px;
+  }
+
+  &__city {
+    color: $grey;
+  }
+
+  &__link {
+    border: 1px solid $grey;
+    background-color: $black;
+    display: inline-block;
+    padding: 6px 12px;
+
+    &:hover {
+      border: 1px solid $gold;
+
+      a {
+        color: $gold;
+      }
+    }
+
+    a {
+      text-decoration: 0;
+      font-family: optimus;
+    }
+
+  }
+}
+
+.performances-internal {
+  text-align: center;
+
+  .grid__item {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $grey-dark;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__date {
+    color: $grey;
+    margin-bottom: 0;
+    font-family: verdana;
+  }
+
+  &__venue {
+    color: $white;
+    font-family: optimus;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+  }
+
+  &__opera {
+    color: $white;
+    font-style: italic;
+    font-size: 26px;
+    margin-bottom: 6px;
+  }
+
+  &__city {
+    color: $grey;
+  }
+
+  &__link {
+    border: 1px solid $grey;
+    background-color: $black;
+    display: inline-block;
+    padding: 6px 12px;
+
+    &:hover {
+      border: 1px solid $gold;
+
+      a {
+        color: $gold;
+      }
+    }
+
+    a {
+      text-decoration: 0;
+      font-family: optimus;
+    }
+
+  }
+}

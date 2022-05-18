@@ -1,0 +1,25 @@
+.grid-2col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .grid__item {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $small) {
+    .grid__item {
+      width: 45%;
+    }
+  }
+}
+
+.grid-3col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .grid__item {
+    width: 31%;
+  }
+}

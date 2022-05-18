@@ -1,0 +1,11 @@
+.photo-gallery {
+  .grid__item {
+    margin-bottom: 10px;
+    .img-wrapper {
+      height: 225px;
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid $grey-dark;
+    }
+  }
+}

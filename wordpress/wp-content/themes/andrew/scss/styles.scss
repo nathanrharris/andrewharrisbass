@@ -1,0 +1,112 @@
+$white: #EEE;
+$black: #000;
+$grey: #999;
+$grey-dark: #666;
+$gold: #ebd24a;
+
+$small: 769px;
+$medium: 900px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $black;
+  background-image: url(../images/bg1.png);
+}
+
+.page-wrapper {
+  width: 100vw;
+  width: -webkit-fill-available;
+
+  background: linear-gradient(0deg, rgba(0,0,0,.50) 0%, rgba(0,0,0,.80) 50%, rgba(0,0,0,1) 100%);
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.content {
+  max-width: 1200px;
+  min-width: 90%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: $small) {
+  .content {
+    min-width: 700px;
+  }
+}
+
+.panel {
+  min-height: 100vh;
+  padding-bottom: 48px;
+}
+
+.internal-panel {
+  min-height: calc(100vh - 300px);
+}
+
+.banner-wrapper {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 80px;
+  z-index: 200;
+}
+
+.logged-in {
+  .banner-wrapper {
+    top: 112px;
+  }
+}
+
+@media screen and (max-width: $small) {
+.logged-in {
+    .banner-wrapper {
+      top: 125px;
+    }
+  }
+
+  .banner-wrapper {
+    top: 125px;
+  }
+}
+
+.banner {
+  max-width: 90vw;
+}
+
+@media screen and (min-height: 1000px) {
+  .banner {
+    max-width: 80vw;
+  }
+}
+
+@media screen and (min-width: $small) {
+  .banner {
+    max-width: 50vw;
+  }
+}
+
+@media screen and (min-width: $medium) {
+  .banner {
+    max-width: 800vw;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-height: 1100px) {
+  .banner {
+    max-width: 50vw;
+  }
+}
+
+@import "components/*";

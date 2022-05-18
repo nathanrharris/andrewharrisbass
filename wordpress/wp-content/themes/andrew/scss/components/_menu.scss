@@ -1,0 +1,145 @@
+.page-menu {
+
+  display: none;
+
+  @media screen and (min-width: $small) {
+    display: block;
+  }
+
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 24px;
+
+  &__logo-link {
+    font-family: gothica-short;
+    text-decoration: none;
+    font-size: 64px;
+    line-height: 16px;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+  }
+
+  &__item {
+
+    text-align: right;
+
+    a {
+      font-size: 18px;
+      font-family: optimus;
+      text-decoration: none;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.home-menu {
+
+  display: none;
+
+  @media screen and (min-width: $small) {
+    display: block;
+  }
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 300;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+
+    text-align: center;
+
+    a {
+      font-size: 20px;
+      font-family: optimus;
+      text-decoration: none;
+      letter-spacing: 2px;
+
+      @media screen and (min-width: $medium) {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.logged-in {
+  .home-menu, .page-menu {
+    top: 32px;
+  }
+}
+
+.home-mobile-menu {
+  position: fixed;
+  z-index: 800;
+  background-color: $black;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 64px;
+  display: none;
+
+  &__item {
+
+    text-align: center;
+
+    a {
+      font-size: 36px;
+      line-height: 12vh;
+      font-family: optimus;
+      text-decoration: none;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.home-mobile-menu-link {
+  display: block;
+  z-index: 900;
+  position: fixed;
+  top: 0;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  padding-right: 8px;
+  width: calc(100% - 8px);
+  background-color: rgba(0, 0, 0, 0.6);
+
+  a {
+    float: right;
+  }
+
+  a.mobile-menu-close-link {
+    display: none;
+    text-decoration: none;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: $small) {
+  .home-mobile-menu-link {
+    display: none;
+  }
+}
