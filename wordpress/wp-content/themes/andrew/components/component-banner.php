@@ -1,3 +1,5 @@
 <div class="banner-wrapper">
-  <img src="<?php print get_stylesheet_directory_uri(); ?>/images/banner.png" class="banner" />
+  <br /><br />
+  <br /><br />
+  <img src="<?php print get_stylesheet_directory_uri(); ?>/images/banner-new.png" class="banner" />
 </div>
