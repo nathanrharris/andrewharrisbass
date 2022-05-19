@@ -113,6 +113,20 @@ body {
   background-color: #000;
 }
 
+@media screen and (min-width: 769px) {
+  .contact-left {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .wp-block-columns {
+    display: block;
+  }
+  .wp-block-columns .wp-block-column {
+    margin-left: 0 !important;
+    padding-bottom: 24px;
+  }
+}
 @font-face {
   font-family: optimus;
   src: url(../fonts/OptimusPrinceps.ttf);
@@ -355,6 +369,13 @@ body {
 .performances-internal {
   text-align: center;
 }
+.performances-internal .year_flag {
+  border-bottom: 3px solid #666;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-bottom: 24px;
+  display: block;
+}
 .performances-internal .grid__item {
   width: 75%;
   margin-left: auto;
@@ -364,6 +385,9 @@ body {
   border-bottom: 1px solid #666;
 }
 .performances-internal .grid__item:last-child {
+  border-bottom: 0;
+}
+.performances-internal .grid__item.no-border {
   border-bottom: 0;
 }
 .performances-internal__date {
@@ -457,6 +481,12 @@ body {
 
 #homepage-slide__1 {
   left: 0;
+}
+
+.wp-block-social-links {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
 }
 
 h1 {

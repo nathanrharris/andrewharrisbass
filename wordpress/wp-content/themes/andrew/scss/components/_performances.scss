@@ -66,6 +66,14 @@
 .performances-internal {
   text-align: center;
 
+   .year_flag {
+      border-bottom: 3px solid $grey-dark;
+      width: 75%;
+      margin-left: 12.5%;
+      margin-bottom: 24px;
+      display: block;
+   }
+
   .grid__item {
     width: 75%;
     margin-left: auto;
@@ -75,6 +83,10 @@
     border-bottom: 1px solid $grey-dark;
 
     &:last-child {
+      border-bottom: 0;
+    }
+
+    &.no-border {
       border-bottom: 0;
     }
   }

@@ -1,3 +1,20 @@
 .contact-wrapper {
   background-color: $black;
 }
+
+@media screen and (min-width: $small) {
+  .contact-left {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .wp-block-columns {
+    display: block;
+
+    .wp-block-column {
+      margin-left: 0 !important;
+      padding-bottom: 24px;
+    }
+  }
+}
