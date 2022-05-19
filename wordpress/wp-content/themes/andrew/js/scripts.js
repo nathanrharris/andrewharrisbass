@@ -21,7 +21,8 @@ var video_modal = (function ($) {
       $('#video-player').get(0).play();
     },
 
-    close: function () {
+    close: function (e) {
+
       $('#video-player').get(0).pause();
       $('.video__modal--wrapper').fadeOut('fast');
 

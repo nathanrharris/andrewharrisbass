@@ -17,7 +17,12 @@
 
       print '<h4>' . get_the_title() . '</h4>';
 
-      print get_field('embed_code');
+      if ($mp3 = get_field('mp3')) {
+        print "<audio controls><source src='" . $mp3['url']  . "' type='audio/mpeg'></audio>";
+      }
+      else {
+        print get_field('embed_code');
+      }
 
       print "</div>";
 

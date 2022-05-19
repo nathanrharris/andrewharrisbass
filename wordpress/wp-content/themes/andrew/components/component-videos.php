@@ -42,6 +42,6 @@
     <video width="100%" height="auto" controls id="video-player">
       <source src="#" type="video/mp4">
     </video>
-    <a href="#" class="modal-close">X</a>
+    <a class="modal-close">X</a>
   </div>
 </div>
