@@ -45,6 +45,12 @@
   }
 }
 
+@media screen and (max-width: $small) {
+  .homepage-slide__links {
+      top: calc(100vh - 250px);
+  }
+}
+
 #homepage-slide__1 {
   left: 0;
 }

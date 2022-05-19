@@ -484,6 +484,11 @@ audio {
   text-shadow: 2px 2px #000000;
 }
 
+@media screen and (max-width: 769px) {
+  .homepage-slide__links {
+    top: calc(100vh - 250px);
+  }
+}
 #homepage-slide__1 {
   left: 0;
 }
