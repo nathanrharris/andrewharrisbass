@@ -82,7 +82,8 @@ body {
 }
 @media screen and (min-width: 900px) {
   .banner {
-    max-width: 800vw;
+    max-width: 80vw;
+    max-height: 25vh;
   }
 }
 @media screen and (min-width: 1300px) and (max-height: 1100px) {
@@ -210,8 +211,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 300;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -437,12 +438,12 @@ body {
 }
 .homepage-slide__links a#gallery-link {
   text-align: center;
-  font-size: 64px;
+  font-size: 48px;
   letter-spacing: 1px;
   display: block;
   text-decoration: none;
   line-height: 96px;
-  font-family: gothica-short;
+  font-family: optimus;
   text-shadow: 3px 3px #000000;
 }
 .homepage-slide__links a#bio-link {
@@ -524,6 +525,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 16px;
+  text-align: justify;
 }
 
 a {
@@ -535,18 +537,19 @@ a:hover {
 
 .archive {
   text-align: center;
-  font-size: 42px;
+  font-size: 24px;
   letter-spacing: 1px;
   display: block;
   text-decoration: none;
-  font-family: gothica-short;
+  font-family: optimus;
   text-shadow: 3px 3px #000000;
   margin-top: 24px;
+  font-weight: 900;
 }
 
 @media screen and (min-width: 769px) {
   .archive {
-    font-size: 64px;
+    font-size: 20px;
   }
 }
 .videos__grid img {

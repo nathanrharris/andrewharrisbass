@@ -69,6 +69,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 16px;
+  text-align: justify;
 }
 
 a {
@@ -81,17 +82,19 @@ a {
 
 .archive {
   text-align: center;
-  font-size: 42px;
+  font-size: 24px;
   letter-spacing: 1px;
   display: block;
   text-decoration: none;
-  font-family: gothica-short;
+  //font-family: gothica-short;
+  font-family: optimus;
   text-shadow: 3px 3px #000000;
   margin-top: 24px;
+  font-weight: 900;
 }
 
 @media screen and (min-width: $small) {
   .archive {
-    font-size: 64px;
+    font-size: 20px;
   }
 }
